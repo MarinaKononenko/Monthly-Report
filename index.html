@@ -76,26 +76,26 @@
       font-size: 14px;
     }
     .plan {
-      background-color: #f8f9fa; /* Более светлый фон */
+      background-color: #f8f9fa;
       padding: 15px;
       border-radius: 10px;
       margin-top: 20px;
-      opacity: 0.9; /* Легкая прозрачность */
+      opacity: 0.9;
     }
     .plan h3 {
-      color: #6c757d; /* Менее яркий цвет */
+      color: #6c757d;
       margin-top: 0;
-      font-size: 16px; /* Уменьшенный размер шрифта */
+      font-size: 16px;
     }
     .plan ul {
       padding-left: 20px;
     }
     .plan ul li {
       margin-bottom: 10px;
-      color: #6c757d; /* Менее яркий цвет текста */
+      color: #6c757d;
     }
     .plan ul li strong {
-      color: #6c757d; /* Менее яркий цвет для акцентов */
+      color: #6c757d;
     }
     .tag {
       display: inline-block;
@@ -113,247 +113,191 @@
     .section {
       animation: fadeIn 0.5s ease-out;
     }
+
+    /* Стили для таблицы */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #2C61C6;
+      color: white;
+    }
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+
+    /* Адаптация для мобильных устройств */
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+      table {
+        width: 100%;
+        display: table;
+        overflow-x: visible;
+        white-space: normal;
+      }
+      th, td {
+        padding: 8px;
+        font-size: 12px;
+        word-break: break-word;
+      }
+      th {
+        white-space: normal;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      h2 {
+        font-size: 16px;
+      }
+      .section {
+        padding: 10px;
+      }
+    }
   </style>
 </head>
 <body>
   <h1>Анализ рабочего времени и выполненных задач*</h1>
 
-<div class="section">
-  <div style="text-align: center;">
-    <!DOCTYPE html>
-    <html lang="ru">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Анализ задач и план на неделю</title>
-      <style>
-        body {
-          font-family: 'Arial', sans-serif;
-          line-height: 1.6;
-          margin: 0;
-          padding: 20px;
-          background-color: #f0f4f8;
-          color: #333;
-        }
-        table {
-          width: 100%;
-          border-collapse: collapse;
-          margin-bottom: 20px;
-          background-color: #fff;
-          border-radius: 10px;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        th, td {
-          padding: 12px;
-          text-align: left;
-          border-bottom: 1px solid #ddd;
-        }
-        th {
-          background-color: #2C61C6;
-          color: white;
-        }
-        tr:hover {
-          background-color: #f5f5f5;
-        }
-
-        /* Адаптация для мобильных устройств */
-        @media (max-width: 768px) {
-          table {
-            width: 85%; /* Уменьшаем ширину таблицы */
-            margin: 0 auto; /* Центрируем */
-          }
-        }
-      </style>
-    </head>
-    <body>
-    
-      <table>
-        <thead>
-          <tr>
-            <th>Категория задач</th>
-            <th>Время в день</th>
-            <th>Время в неделю</th>
-            <th>Время в месяц</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Контент и каталог</td>
-            <td>1 час 5 мин</td>
-            <td>5 часов 25 мин</td>
-            <td>21 час 40 мин</td>
-          </tr>
-          <tr>
-            <td>Управление проектами и коммуникация</td>
-            <td>3 часа 20 мин</td>
-            <td>16 часов 40 мин</td>
-            <td>66 часов 40 мин</td>
-          </tr>
-          <tr>
-            <td>Работа над сайтом</td>
-            <td>2 часа 25 мин</td>
-            <td>12 часов 5 мин</td>
-            <td>48 часов 20 мин</td>
-          </tr>
-          <tr>
-            <td>Бэклог</td>
-            <td>15 мин</td>
-            <td>1 час 15 мин</td>
-            <td>4 часа</td>
-          </tr>
-          <tr>
-            <td>Организация рабочего процесса</td>
-            <td>1 час 5 мин</td>
-            <td>5 часов 25 мин</td>
-            <td>21 час 40 мин</td>
-          </tr>
-        </tbody>
-      </table>
-
-    </body>
-    </html>
+  <div class="section">
+    <table>
+      <thead>
+        <tr>
+          <th>Категория задач</th>
+          <th>Время в день</th>
+          <th>Время в неделю</th>
+          <th>Время в месяц</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Контент и каталог</td>
+          <td>1 час 5 мин</td>
+          <td>5 часов 25 мин</td>
+          <td>21 час 40 мин</td>
+        </tr>
+        <tr>
+          <td>Управление проектами и коммуникация</td>
+          <td>3 часа 20 мин</td>
+          <td>16 часов 40 мин</td>
+          <td>66 часов 40 мин</td>
+        </tr>
+        <tr>
+          <td>Работа над сайтом</td>
+          <td>2 часа 25 мин</td>
+          <td>12 часов 5 мин</td>
+          <td>48 часов 20 мин</td>
+        </tr>
+        <tr>
+          <td>Бэклог</td>
+          <td>15 мин</td>
+          <td>1 час 15 мин</td>
+          <td>4 часа</td>
+        </tr>
+        <tr>
+          <td>Организация рабочего процесса</td>
+          <td>1 час 5 мин</td>
+          <td>5 часов 25 мин</td>
+          <td>21 час 40 мин</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-</div>
-        <p class="note" style="text-align: left;">
-          *- Подготовлено на основе средних показателей за период с 17/02/25 по 19/03/25. Фактическое время может отличаться в зависимости от задач и их приоритетов.
-        </p>
-      </body>
-      </p>  
-    </div>
-  </div>
+
+  <p class="note" style="text-align: left;">
+    *- Подготовлено на основе средних показателей за период с 17/02/25 по 19/03/25. Фактическое время может отличаться в зависимости от задач и их приоритетов.
+  </p>
 
   <div class="section">
     <h2 onclick="toggleSection(this)">Контент и каталог <span class="tag">20 часов</span></h2>
-    <ul>
-        <ul>
-          <li>Добавление новых карточек товаров (
-            <a href="https://mojem.com/category/svetilniki/" target="_blank">светильники</a>, 
-            <a href="https://mojem.com/catalog/beydzhi/beydzhi-plastikovye-na-lentah/" target="_blank">бейджи</a>, 
-            <a href="https://mojem.com/catalog/ribbons-and-retractors-for-badges/plastikovye-karty/" target="_blank">пластиковые карты</a>, 
-            <a href="https://mojem.com/catalog/ucenka/holschovaya-sumka-shopper-s-molniey/" target="_blank">шопперы с молнией</a>
-          )</li>
-          <li>Замена конструктора и расширение палитры в КТ для 
-            <a href="https://mojem.com/catalog/ribbons-and-retractors-for-badges/lenty-dlya-beydzhey-odnotonnye-s-krepleniyami/" target="_blank">лент</a> и 
-            <a href="https://mojem.com/catalog/futbolki/futbolki-uniseks-standart-dtf/" target="_blank">футболок</a>
-          </li>
-          <li>Составление технического задания (ТЗ) и заполнение контента по 
-            <a href="https://mojem.com/catalog/ribbons-and-retractors-for-badges/lenty-dlya-beydzhey-s-karabinom/" target="_blank">лентам для бейджей</a>
-          </li>          <li>Работа с контентом (обновление слайдеров, карточек товара, изображений в каталоге, блоков “рекомендуем”, “новинки”, форматирование видео)</li>
-        </ul>
-      </div>
+    <ul style="display: none;">
+      <li>Добавление новых карточек товаров (
+        <a href="https://mojem.com/category/svetilniki/" target="_blank">светильники</a>, 
+        <a href="https://mojem.com/catalog/beydzhi/beydzhi-plastikovye-na-lentah/" target="_blank">бейджи</a>, 
+        <a href="https://mojem.com/catalog/ribbons-and-retractors-for-badges/plastikovye-karty/" target="_blank">пластиковые карты</a>, 
+        <a href="https://mojem.com/catalog/ucenka/holschovaya-sumka-shopper-s-molniey/" target="_blank">шопперы с молнией</a>
+      )</li>
+      <li>Замена конструктора и расширение палитры в КТ для 
+        <a href="https://mojem.com/catalog/ribbons-and-retractors-for-badges/lenty-dlya-beydzhey-odnotonnye-s-krepleniyami/" target="_blank">лент</a> и 
+        <a href="https://mojem.com/catalog/futbolki/futbolki-uniseks-standart-dtf/" target="_blank">футболок</a>
+      </li>
+      <li>Составление технического задания (ТЗ) и заполнение контента по 
+        <a href="https://mojem.com/catalog/ribbons-and-retractors-for-badges/lenty-dlya-beydzhey-s-karabinom/" target="_blank">лентам для бейджей</a>
+      </li>
+      <li>Работа с контентом (обновление слайдеров, карточек товара, изображений в каталоге, блоков “рекомендуем”, “новинки”, форматирование видео)</li>
+    </ul>
+  </div>
 
   <div class="section">
     <h2 onclick="toggleSection(this)">Управление проектами и коммуникация <span class="tag">70 часов</span></h2>
-    <ul>
+    <ul style="display: none;">
       <li>Проведение встреч с командой (обсуждение текущих задач и результатов)</li>
       <li>Подготовка к встречам (сбор данных, формирование повестки, подготовка докладов)</li>
       <li>Коммуникация с i·vi (постановка задач, контроль их выполнения, согласование сроков и приоритетов)</li>
-      <li>Коммуникация с командой и анализ <a href="https://www.figma.com/board/RS3aN56lCU2mCNyI30HjVC/Road-Map-Mojem.com?node-id=1127-3493&t=mM5gUZOqeTDEpVkM-4" target="_blank">фидбэка</a> от отдела продаж (обсуждение улучшений, внедрение изменений)</li>      <li>Брейнштормы (
+      <li>Коммуникация с командой и анализ <a href="https://www.figma.com/board/RS3aN56lCU2mCNyI30HjVC/Road-Map-Mojem.com?node-id=1127-3493&t=mM5gUZOqeTDEpVkM-4" target="_blank">фидбэка</a> от отдела продаж (обсуждение улучшений, внедрение изменений)</li>
+      <li>Брейнштормы (
         <a href="https://disk.yandex.ru/i/lPWDj2hG-bq41w" target="_blank">генерация идей</a>, 
         <a href="https://disk.yandex.ru/i/onmt0_IHwrDmqw" target="_blank">решение проблем</a>, 
         <a href="https://disk.yandex.ru/i/1XbIi7G72zRqNw" target="_blank">обсуждение решений с командой</a> без созвонов)
-        <li>Работа в <a href="https://www.figma.com/board/RS3aN56lCU2mCNyI30HjVC/Road-Map-Mojem.com?node-id=1819-4232&t=mM5gUZOqeTDEpVkM-0" target="_blank">FigJam</a> (ведение таймлайнов, актуализация задач, визуализация процессов)</li>      <li>Ведение документации и составление отчётов (фиксация новой информации/результатов, подготовка отчётов для руководства)</li>
+      </li>
+      <li>Работа в <a href="https://www.figma.com/board/RS3aN56lCU2mCNyI30HjVC/Road-Map-Mojem.com?node-id=1819-4232&t=mM5gUZOqeTDEpVkM-0" target="_blank">FigJam</a> (ведение таймлайнов, актуализация задач, визуализация процессов)</li>
+      <li>Ведение документации и составление отчётов (фиксация новой информации/результатов, подготовка отчётов для руководства)</li>
       <li>Операционные задачи (правки в файлах выгрузки, корректировка и актуализация информации, коммуникация в чатах, 
         <a href="https://disk.yandex.ru/d/J_0lZjmS-ai8Lg" target="_blank">консультации коллег по работе сайта</a>)
-      </li>    </ul>
+      </li>
+    </ul>
   </div>
 
   <div class="section">
     <h2 onclick="toggleSection(this)">Работа над сайтом <span class="tag">50 часов</span></h2>
-    <ul>
+    <ul style="display: none;">
       <li>Еженедельная приоритизация задач и стратегическое планирование (анализ текущих задач, распределение ресурсов, определение приоритетов)</li>
       <li>Анализ задачи и постановка ТЗ для подготовки новой архитектуры каталога</li>
-      <li><a href="https://www.figma.com/board/RS3aN56lCU2mCNyI30HjVC/Road-Map-Mojem.com?node-id=1583-3964&t=mM5gUZOqeTDEpVkM-4" target="_blank">Тестирование мобильной версии</a> (проверка корректности отображения и функциональности на iPhone)</li>      <li>Изучение инструментов Я.Метрики (анализ данных, настройка отчётов, изучение новых функций и их применение)</li>
-      <li><a href="https://crmmojem.ru/company/personal/user/236/tasks/task/view/1110418/" target="_blank">Выполнение задач по SEO</a></li>      <li>Тестирование и проверка исправлений (проверка задач, выполненных без i·vi)</li>
+      <li><a href="https://www.figma.com/board/RS3aN56lCU2mCNyI30HjVC/Road-Map-Mojem.com?node-id=1583-3964&t=mM5gUZOqeTDEpVkM-4" target="_blank">Тестирование мобильной версии</a> (проверка корректности отображения и функциональности на iPhone)</li>
+      <li>Изучение инструментов Я.Метрики (анализ данных, настройка отчётов, изучение новых функций и их применение)</li>
+      <li><a href="https://crmmojem.ru/company/personal/user/236/tasks/task/view/1110418/" target="_blank">Выполнение задач по SEO</a></li>
+      <li>Тестирование и проверка исправлений (проверка задач, выполненных без i·vi)</li>
       <li>Оптимизация контента (например, обновление изображений в портфолио и перезалив по сетке; систематизация информации в характеристиках)</li>
     </ul>
   </div>
 
   <div class="section">
-    <h2 onclick="toggleSection(this)">
-      <a>Работа с бэклогом</a> 
-      <span class="tag">4 часа</span>
-    </h2>
-    <ul>      <li>Актуализация задач (проверка приоритетов, удаление устаревших, добавление новых)</li>
+    <h2 onclick="toggleSection(this)">Работа с бэклогом <span class="tag">4 часа</span></h2>
+    <ul style="display: none;">
+      <li>Актуализация задач (проверка приоритетов, удаление устаревших, добавление новых)</li>
       <li>Разбор старых задач и анализ их актуальности</li>
     </ul>
   </div>
 
-  <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Кастомный Tooltip</title>
-  <style>
-    /* Стили для tooltip */
-    .tooltip {
-      position: relative;
-      display: inline-block;
-      cursor: pointer;
-      color: #2C61C6; /* Цвет текста */
-    }
-
-    .tooltip .tooltiptext {
-      visibility: hidden;
-      width: 220px; /* Ширина подсказки */
-      background-color: #F5679B; /* Розовый цвет */
-      color: #fff; /* Белый текст */
-      text-align: center;
-      border-radius: 6px;
-      padding: 8px;
-      position: absolute;
-      z-index: 1;
-      bottom: 125%; /* Расположение сверху */
-      left: 50%;
-      margin-left: -110px; /* Центрирование */
-      opacity: 0;
-      transition: opacity 0.1s; /* Плавное появление */
-      font-size: 14px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Тень */
-    }
-
-    .tooltip .tooltiptext::after {
-      content: "";
-      position: absolute;
-      top: 100%; /* Стрелка снизу */
-      left: 50%;
-      margin-left: -5px;
-      border-width: 5px;
-      border-style: solid;
-      border-color: #F5679B transparent transparent transparent; /* Цвет стрелки */
-    }
-
-    .tooltip:hover .tooltiptext {
-      visibility: visible;
-      opacity: 1;
-    }
-  </style>
-</head>
-<body>
   <div class="section">
     <h2 onclick="toggleSection(this)">Организация рабочего процесса <span class="tag">20 часов</span></h2>
-    <ul>
+    <ul style="display: none;">
       <li>Настройка инструментов и решение технических вопросов (
         <a href="https://disk.yandex.ru/d/iyFGnVehyADTng" target="_blank">помощь коллегам</a>, 
         <a href="https://disk.yandex.ru/i/nMEAtGPWak1sQg" target="_blank">устранение неполадок в инструментах</a>, 
-        <span class="tooltip">настройка рабочих процессов для повышения эффективности
-          <span class="tooltiptext">Например, создание шаблонов для ускоренного заполнения карточек товаров, сокращение ручной работы</span>
-        </span>)
+        настройка рабочих процессов для повышения эффективности)
       </li>
       <li>Составление заметок (фиксация решений, постановка задач, согласование сроков и приоритетов)</li>
       <li>Декомпозиция задач (разбиение крупных задач на подзадачи, определение этапов выполнения, распределение задач по срокам)</li>
       <li>Постановка задач команде (формулировка требований, объяснение целей, контроль выполнения)</li>
     </ul>
   </div>
-</body>
-</html>
 
   <div class="section">
-    <h2 onclick="toggleSection(this)">План на неделю
-      <span class="tag">40 часов</span></h2>
-    <div class="plan">
-      <h3>Показатели по часам при высокой (полной) загруженности </h3>
+    <h2 onclick="toggleSection(this)">План на неделю <span class="tag">40 часов</span></h2>
+    <div class="plan" style="display: none;">
+      <h3>Показатели по часам при высокой (полной) загруженности</h3>
       <ul>
         <li><strong>Контент и каталог – 10 часов</strong>
           <ul>
@@ -393,8 +337,8 @@
 
   <div class="section">
     <h2 onclick="toggleSection(this)">Выводы</h2>
-    <div class="plan">
-      <p>На основе предоставленных данных можно сделать вывод, что ежедневные временные затраты распределяются следующим образом:</p>
+    <div class="plan" style="display: none;">
+      <p>На основе предоставленных данных:</p>
       <ul>
         <li><strong>Контент и каталог</strong> – около <strong>1,5 часа в день</strong>.</li>
         <li><strong>Работа над сайтом</strong> – около <strong>3 часов в день</strong>.</li>
